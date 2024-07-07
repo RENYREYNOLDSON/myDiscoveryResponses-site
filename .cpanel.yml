@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/zwjo3p7d6kjn/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp documentation.html $DEPLOYPATH
+    - /bin/cp downloads.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp guide_image.png $DEPLOYPATH
+    - /bin/cp menu_image.png $DEPLOYPATH
+    - /bin/cp preview_image.PNG $DEPLOYPATH
+    - /bin/cp video.gif $DEPLOYPATH
+    - /bin/cp video.mp4 $DEPLOYPATH
