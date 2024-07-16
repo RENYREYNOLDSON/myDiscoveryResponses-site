@@ -1,18 +1,19 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>myDiscoveryResponses</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="http://mydiscoveryresponses.com/">myDiscoveryResponses</a>
 
+            <a class="navbar-brand" href="index.html">myDiscoveryResponses</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="http://mydiscoveryresponses.com/">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="downloads.html">Downloads</a>
@@ -32,13 +33,15 @@
             </div>
             <nav class="navbar">
                 <form class="form-inline">
-                  <a href="https://github.com/RENYREYNOLDSON/myDiscoveryResponses" class="btn btn-outline-success" type="button" >📖 Github</a>
-                  <a href="myDiscoveryResponsesInstaller.zip" class="btn btn-outline-success" type="button">Download</a>
+                  <a href="https://github.com/RENYREYNOLDSON/myDiscoveryResponses" class="btn btn-success" type="button" >📖 Github</a>
+                  
+                  <a href="myDiscoveryResponsesInstaller.zip" class="btn btn-success" type="button">Download</a>
                 </form>
             </nav>
+
         </div>
       </nav>
-
+      <div style="height: 56px;"></div>
       
 
 
@@ -46,17 +49,27 @@
       <div class="container-fluid">
         <div class="row">
           <!-- Navbar Sidebar -->
-          <nav id="navbar-example3" class="col-md-3 navbar navbar-light flex-column align-items-start p-3 position-fixed" style="height: 100vh; overflow-y: auto;">
+          <nav id="navbar-example3" class="sidebar flex-column navbar align-items-start p-3 position-fixed" style="height: 100vh; overflow-y: auto;">
             <nav class="nav nav-pills flex-column">
               <a class="nav-link" href="#installation">Installation</a>
               <a class="nav-link" href="#interface">User Interface</a>
               <a class="nav-link" href="#requests">Discovery Requests</a>
+
               <nav class="nav nav-pills flex-column ms-3">
-                <a class="nav-link my-1" href="#start">Getting started</a>
+                
+                <a class="nav-link my-1" href="#rfp">RFPs</a>
+                <a class="nav-link my-1" href="#rfa">RFAs</a>
+                <a class="nav-link my-1" href="#sprog">SPROGs</a>
+                <a class="nav-link my-1" href="#frog">FROGs</a>
+              </nav>
+
+              <a class="nav-link my-1" href="#start">Getting started</a>
+              <nav class="nav nav-pills flex-column ms-3">
                 <a class="nav-link my-1" href="#reading">Reading files</a>
                 <a class="nav-link my-1" href="#exporting">Exporting files</a>
                 <a class="nav-link my-1" href="#feedback">Using client feedback</a>
               </nav>
+
               <a class="nav-link" href="#shortcuts">Shortcuts</a>
               <a class="nav-link" href="#hotkeys">Hotkeys</a>
               <a class="nav-link" href="#previews">Previews</a>
@@ -64,12 +77,15 @@
               <a class="nav-link" href="#settings">Settings</a>
             </nav>
           </nav>
+          </div>
+          </div>
           <br>
+
 
           <!-- Main Content Area -->
           <div class="col-md-9 offset-md-2">
             <br>
-              <p>The bespoke software, myDiscoveryResponses, is designed for the production and editing of discovery responses.
+              <p>The bespoke software, <strong>myDiscoveryResponses</strong>, is designed for the production and editing of discovery responses.
                 Using the software, you can load discovery request pdf's of type:
 Requests for Admissions (RFA),
 Demands for Production (RFP),
@@ -87,7 +103,7 @@ for future editing as a .discovery file.
                 <div class="card">
                   <div class="card-body">
                     <p class="card-text">Download myDiscoveryResponses installer for Windows x64</p>
-                    <a href="#" class="btn btn-primary">Download</a>
+                    <a href="#" class="btn btn-success">Download</a>
                   </div>
                 </div>
                 <br>
@@ -106,7 +122,7 @@ for future editing as a .discovery file.
               <p>The main window is comprised of the Requests panel, Response panel and the Objections panel. Each of these
                 panels can be broken down further into their subcomponents.
               </p>
-              <h5>Requests Panel</h5>
+              <h4>Requests Panel</h4>
               <p><h6>Clients</h6>
                 Each open client/editor is shown here, they can be swapped between by left clicking on them. You can drag a file from one client name onto another to move it between them.
                 <h6>Files</h6>
@@ -114,45 +130,264 @@ for future editing as a .discovery file.
                 <h6>Requests</h6>
                 All of the requests for the current file are shown here and can be swapped between by left clicking them. The colour of each one reflects their current state: <span style="color: #a9a3a3">WHITE - Unchanged</span>,<span style="color: #4e4c4c"> GREY - Edited</span>, <span style="color: #19850f">GREEN - Submitted </span>and <span style="color: #de0909">RED - Check with Clients.</span>
               </p>
-              <h5>Response Panel</h5>
+              <h4>Response Panel</h4>
               <p>
                 <h6>Request</h6>
-                The currently selected request is shown here.
+                The currently selected request is shown here, it cannot be edited.
                 <h6>Objections</h6>
-                The selected objections will be formatted in this box, if the objection has text inputs then these will also be added.
+                The selected objections will be formatted in this box, if the objection has text inputs then these will also be added. You can edit the text in this box if custom objections are required.
 
                 
                 <h6>Response</h6>
-                The response area contains different entries depending on the particular type of discovery request.
+                The response area contains different entries depending on the particular type of discovery request. Text inserted into here my also add additional text to the objections box.
               </p>
-              <h5>Objections Panel</h5>
-              <h5>Navigation Bar</h5>
+              <h4>Objections Panel</h4>
+              <p>The objection panel contains a list of the saved objections. You can left-click to toggle and objection for the current request or right-click to edit the additional text options within it.</p>
+              <h4>Navigation Bar</h4>
+              <p>The navigation bar contains the actions:</p>
+              <p><mark>File -> New Window</mark> Opens a new empty window</p>
+              <p><mark>File -> New Client</mark> Creates a new client with a custom name</p>
+              <p><mark>File -> Open Recent</mark> Shows recently edited discovery files</p>
+              <p><mark>File -> Open File</mark> Opens a PDF or discovery file</p>
+              <p><mark>File -> Open Folder</mark> Opens all available files within a folder (not including subdirectories)</p>
+              <p><mark>File -> Add blank FROG</mark> Creates a blank FROG file (all requests enabled)</p>
+              <p><mark>File -> Load Client Feedback</mark> Load client feedback from a DOCX file created by this program</p>
+              <p><mark>File -> Save Client</mark> Save a client as a discovery file</p>
+              <p><mark>File -> Save Client As</mark> Save a client as a new discovery file</p>
+              <p><mark>File -> Export File as DOCX</mark> Export the current file as a word document</p>
+              <p><mark>File -> Export Client as DOCX</mark> Export all of the files under the current client</p>
+              <p><mark>File -> Export Check With Client</mark> Export the current file but only requests marked as 'check with client'</p>
+              <p><mark>File -> Preview DOCX</mark> Opens a window with a preview of the current file</p>
+              <p><mark>File -> Delete File</mark> Deletes the currently selected file </p>
+              <p><mark>File -> Close Client</mark> Closes the currently selected client</p>
+              <p><mark>File -> Check For Updates</mark> Checks online for an update to myDiscoveryResponses</p>
+              <p><mark>File -> Exit</mark> Close the current window</p>
+              <br>
+              <p><mark>Options -> Firm Details</mark> Allows editing of the firms detailed, which are added to the DOCX exports</p>
+              <p><mark>Options -> Objections</mark> Opens the objections editor window</p>
+              <p><mark>Options -> Shortcuts</mark> Opens the shortcuts editor window</p>
+              <p><mark>Options -> Settings</mark> Opens the software settings window</p>
+              <p><mark>Options -> User Guide</mark> Opens this documentation page in the default browser</p>
+              <br>
+              <p><mark>File Details</mark> Allows editing of the current files details</p>
+              <p><mark>Undo</mark> Undo the last action</p>
+              <p><mark>Redo</mark> Redo the last undone action</p>
+              <p><mark>Save</mark> Save a client as a discovery file </p>
+              <p><mark>Preview</mark> Previews the full text response</p>
+              <p><mark>Copy Previous</mark> Copy the objections from the previous request</p>
+              <p><mark>Clear</mark> Fully clear a request</p>
+              <p><mark>Fullscreen</mark> Toggle the software being fullscreen or maximized</p>
+
+
+
+
+
+
               <h4 id="requests">Discovery Requests</h4>
               <hr>
-              <p>...</p>
-              <h5 id="start">Getting Started</h5>
-              <p>...discovery files, </p>
+
+                <!-- Image and Text Side by Side -->
+                <div class="row content-section">
+                  <div class="col-md-4">
+                      <img src="RFP_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                  </div>
+                  <div class="col-md-8">
+                      <h4 id="rfp"><strong>RFPs</strong> Demands for Production</h4>
+                      <p>RFPs have four set responses and the option to type a custom response. If a document location is given
+                        for the request then the set responses will adjust accordingly.
+                      </p>
+                      <p>
+                        <strong>Available</strong> - Responding Party will comply with this demand. Please see “location” produced concurrently herewith.
+                      </p>
+                      <p>
+                        <strong>Exist</strong> - After a diligent search and reasonable inquiry, Responding Party finds no responsive documents in their possession, custody, or control, because no such documents are known to exist. Any responsive documents are believed to be in the possession, custody, or control of location.
+                      </p>
+                      <p>
+                        <strong>Not Possessed</strong> - After a diligent search and reasonable inquiry, Responding Party finds no responsive documents in their possession, custody, or control, because no such documents have ever been in the possession, custody, or control of Responding Party. Any responsive documents are believed to be in the possession, custody, or control of location.
+                      </p>
+                      <p>
+                        <strong>Lost</strong> - After a diligent search and reasonable inquiry, Responding Party finds no responsive documents in their possession, custody, or control, any such documents have been destroyed, lost, misplaced or stolen. Any responsive documents are believed to be in the possession, custody, or control of location.
+                      </p>
+                  </div>
+              </div>
+              <br>
+              <div class="row content-section">
+                <div class="col-md-4">
+                    <img src="RFA_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-8">
+                    <h4 id="rfa"><strong>RFAs</strong> Requests for Admissions</h4>
+                    <p>RFAs have three set responses and the option to type a custom response. Each also has an additional entry
+                      called the '17.1 Response', when a request is submitted and the response is NOT Admit, this 17.1 response will automatically be inserted into
+                      the 17.1 request of any available FROGs.
+                    </p>
+                    <p><strong>Admit</strong> - Admit</p>
+                    <p><strong>Deny</strong> - Deny</p>
+                    <p><strong>Lack Info</strong> - A reasonable inquiry concerning the matter in this particular request has been made, and the information known or readily obtainable is insufficient to enable Responding Party to admit the matter.</p>
+                </div>
+              </div>
+              <br>
+              <div class="row content-section">
+                  <div class="col-md-4">
+                      <img src="SPROG_response.png" class="img-fluid image-half" alt="Placeholder Image">
+                  </div>
+                  <div class="col-md-8">
+                      <h4 id="sprog"><strong>SPROGs</strong> Special Interrogatories</h4>
+                      <p></p>
+                  </div>
+              </div>
+              <br>
+              <div class="row content-section">
+                  <div class="col-md-4">
+                      <img src="FROG_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                  </div>
+                  <div class="col-md-8">
+                      <h4 id="frog"><strong>FROGs</strong> Form Interrogatories</h4>
+                      <p></p>
+                  </div>
+              </div>
+
+
+              <br>
+              <h4 id="start">Getting Started</h4>
+              <hr>
+
               <h5 id="reading">Reading Files</h5>
-              <p>...</p>
+              <p> To read a pdf file we use several natural language processing (NLP) and optical character recognition (OCR) techniques. Once
+                we have created or opened a client, a file can be loaded into it. The standard file reading procedure searches through the pdf file
+                and identifies possible request headings, once these are found correctly then the numbered requests will be returned. For FROGs,
+                a more advanced method is used in which we scan the file and identify which FROGs have been checked off. You can also add a blank FROG
+                which contains all of the available form interrogatories.
+                <div class="alert alert-secondary" role="alert">
+                  Due to the nature of discovery request files, many have different formats and labelling systems. The reading system is continuously being improved
+                  so if you encounter an issue with file reading then report it to reynoldson2002@gmail.com!
+                </div>
+                File details are also extracted from the discovery request files, namely: File Name, Document Name, County, 
+                Plaintiff(s), Defendant(s), Propounding Party, Responding Party, Case number and date. However, this is less
+                developed than the requests reading methods so you should check over all file details and fill them in accordingly; as these
+                will be inserted into the exported DOCX files.
+                </p>
+                <p>
+                A client can be saved for later editing as a custom .discovery file type. Selecting one of these files on windows will open it in
+                myDiscoveryResponses as the software uses this as the default file type. Once you have created the responses for a file you can then move
+                onto exporting them.
+              </p>
+
               <h5 id="exporting">Exporting Files</h5>
-              <p>...</p>
+              <p> 
+                We can export files as word documents (.DOCX) in a number of ways. We can export a single file, export a whole client and export
+                client feedback. Exporting a file inserts all of the file details, requests, objections and responses into an appropriate DOCX file
+                template which can then be edited further if needed. We can also export only the submitted requests by turning on the option
+                <strong>Settings -> General -> Export only submitted responses</strong>.
+              </p>
+
               <h5 id="feedback">Using Client Feedback</h5>
-              <p>...</p>
+              <p>
+                Client feedback can be loaded into the program as long as the original word doc was exported from myDiscoveryResponses (this is because
+                it requires a specific word document format). If you load client feedback into a file then it will fill all of the corresponding
+                request numbers with the clients filled out feedback. This system makes it easy to send only the needed requests to the client and 
+                import the responses straight back into the software.
+              </p>
+
               <h4 id="shortcuts">Shortcuts</h4>
               <hr>
-              <p>...</p>
+              <div class="row content-section">
+                <div class="col-md-6">
+                    <img src="shortcuts_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-6">
+                    <p>Shortcuts allow for faster typing of repeated phrases. A trigger is a unique text code corresponding
+                      to an output value. When a trigger is typed and enter is pressed, the trigger will then be removed and the output
+                      will be inserted in its place. The shortcut editor (shown on the left) allows you to add more custom shortcuts as
+                      needed into the software. You can also delete these by clicking the adjacent trash cans.
+                    </p>
+                </div>
+              </div>
+              <br>
+
               <h4 id="hotkeys">Hotkeys</h4>
               <hr>
-              <p>...</p>
+              <p>Within myDiscoveryResponses there is a number of set hotkeys designed to speed up the process of creating responses,
+                these hotkeys are:
+              </p>
+              <p><mark>Up-Arrow</mark> Move up a request</p>
+              <p><mark>Down-Arrow</mark> Move down a request</p>
+              <p><mark>Enter</mark> Submit a request</p>
+              <p><mark>Escape</mark> Escape a text box</p>
+              <p><mark>Ctrl+N</mark> Create a new client</p>
+              <p><mark>Ctrl+O</mark> Open a file</p>
+              <p><mark>Ctrl+F</mark> Open a folder</p>
+              <p><mark>Ctrl+S</mark> Save current client</p>
+              <p><mark>Ctrl+E</mark> Move up a request</p>
+              <p><mark>Ctrl+Z</mark> Undo action</p>
+              <p><mark>Ctrl+Y</mark> Redo action</p>
+
+
+
               <h4 id="previews">Previews</h4>
               <hr>
-              <p>...</p>
+              <img class="img-fluid" src="preview_example.png">
+              <p>
+                explanation of preview as docx
+                simple explanation of text previews
+
+              </p>
               <h4 id="objections">Objections</h4>
               <hr>
-              <p>...</p>
+              <img class="img-fluid" src="objections_editor.png">
+              <p>
+                How objections work
+                toggling objections
+                objection inputs
+                special objection texts
+                editing objection window
+              
+              </p>
               <h4 id="settings">Settings</h4>
               <hr>
-              <p>...</p>
+              <div class="row content-section">
+                <div class="col-md-6">
+                    <img src="settings_general_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-6">
+                    <h4>General</h4>
+                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
+                </div>
+              </div>
+              <br>
+              <div class="row content-section">
+                <div class="col-md-6">
+                    <img src="settings_appearance_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-6">
+                    <h4>Appearance</h4>
+                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
+                </div>
+              </div>
+              <br>
+              <div class="row content-section">
+                <div class="col-md-6">
+                    <img src="settings_spelling_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-6">
+                    <h4>Spelling and Language</h4>
+                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
+                </div>
+              </div>
+              <br>
+              <div class="row content-section">
+                <div class="col-md-6">
+                    <img src="settings_about_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-6">
+                    <h4>About</h4>
+                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
