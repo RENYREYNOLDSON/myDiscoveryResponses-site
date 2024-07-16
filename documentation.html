@@ -326,22 +326,49 @@ for future editing as a .discovery file.
 
               <h4 id="previews">Previews</h4>
               <hr>
-              <img class="img-fluid" src="preview_example.png">
               <p>
-                explanation of preview as docx
-                simple explanation of text previews
-
+                There are two provided preview options in myDiscoveryResponses. The <strong>Response Preview</strong> (left)
+                is used to preview the output of a single discovery response. It shows the objections and response formatted
+                identically to how they will be written in the exported file. The <strong>Preview DOCX</strong> (right) window
+                shows a preview of the full exported DOCX file. This allows you to check the formatting and details of the exported
+                file before actually exporting it. Note that this might not be identical to the final export in microsoft word.
               </p>
+              <div class="row content-section">
+                <div class="col-md-6">
+                    <img src="preview2_example.png" class="img-fluid image-half" alt="Placeholder Image">
+                </div>
+                <div class="col-md-6">
+                  <img src="preview_example.png" class="img-fluid image-half" alt="Placeholder Image">
+              </div>
+              </div>
+              <br>
+
               <h4 id="objections">Objections</h4>
               <hr>
               <img class="img-fluid" src="objections_editor.png">
+              <br><br>
               <p>
-                How objections work
-                toggling objections
-                objection inputs
-                special objection texts
-                editing objection window
-              
+                <strong>Objection Name</strong> - Displayed name of the objection.
+              </p>
+              <p>
+                <strong>Objection Body</strong> - Text inserted when the objection is selected. [VAR] is the variable placeholder value
+                , when a list of phrases is typed into the objection option then [VAR] is replaced by these. A list will be 
+                formatted as follows: word1,word2,word3 -> as to 'word1', 'word2' and 'word3'.
+              </p>
+              <p>
+                <strong>Additional Text</strong> - Text that will appear after the response instead of before. The same rule
+                applies with the [VAR] placeholder.
+              </p>
+              <p>
+                <strong>Auto Fills</strong> - A list of terms. When one of these is present in a request when loaded, then this 
+                objection will automatically be selected and have the found auto fills typed into the options entry.
+              </p>
+              <p>
+                <strong>Alter 'Notwithstanding' Text</strong> - If this is selected then the 'Notwithstanding' text will be changed from:
+                
+              </p>
+              <p>
+                <strong>Use Auto Fills</strong> - If this is selected then auto fills will be used.
               </p>
               <h4 id="settings">Settings</h4>
               <hr>
