@@ -59,8 +59,7 @@
                 
                 <a class="nav-link my-1" href="#rfp">RFPs</a>
                 <a class="nav-link my-1" href="#rfa">RFAs</a>
-                <a class="nav-link my-1" href="#sprog">SPROGs</a>
-                <a class="nav-link my-1" href="#frog">FROGs</a>
+                <a class="nav-link my-1" href="#sprog">SPROGs & FROGs</a>
               </nav>
 
               <a class="nav-link my-1" href="#start">Getting started</a>
@@ -145,6 +144,8 @@ for future editing as a .discovery file.
               <p>The objection panel contains a list of the saved objections. You can left-click to toggle and objection for the current request or right-click to edit the additional text options within it.</p>
               <h4>Navigation Bar</h4>
               <p>The navigation bar contains the actions:</p>
+              <div class="alert alert-dark" role="alert">
+
               <p><mark>File -> New Window</mark> Opens a new empty window</p>
               <p><mark>File -> New Client</mark> Creates a new client with a custom name</p>
               <p><mark>File -> Open Recent</mark> Shows recently edited discovery files</p>
@@ -177,7 +178,7 @@ for future editing as a .discovery file.
               <p><mark>Copy Previous</mark> Copy the objections from the previous request</p>
               <p><mark>Clear</mark> Fully clear a request</p>
               <p><mark>Fullscreen</mark> Toggle the software being fullscreen or maximized</p>
-
+              </div>
 
 
 
@@ -232,20 +233,14 @@ for future editing as a .discovery file.
                       <img src="SPROG_response.png" class="img-fluid image-half" alt="Placeholder Image">
                   </div>
                   <div class="col-md-8">
-                      <h4 id="sprog"><strong>SPROGs</strong> Special Interrogatories</h4>
-                      <p></p>
+                      <h4 id="sprog"><strong>SPROGs</strong> Special Interrogatories and <strong>FROGs</strong> Form Interrogatories</h4>
+                      <p>SPROGs and FROGs do not have set options within the software. Rather enter your own custom response
+                        when required. Note that for the 17.1 FROGs, submitted RFAs will add their 17.1 response into the response
+                        of all file FROGs automatically.
+                      </p>
                   </div>
               </div>
               <br>
-              <div class="row content-section">
-                  <div class="col-md-4">
-                      <img src="FROG_example.png" class="img-fluid image-half" alt="Placeholder Image">
-                  </div>
-                  <div class="col-md-8">
-                      <h4 id="frog"><strong>FROGs</strong> Form Interrogatories</h4>
-                      <p></p>
-                  </div>
-              </div>
 
 
               <br>
@@ -310,17 +305,19 @@ for future editing as a .discovery file.
               <p>Within myDiscoveryResponses there is a number of set hotkeys designed to speed up the process of creating responses,
                 these hotkeys are:
               </p>
-              <p><mark>Up-Arrow</mark> Move up a request</p>
-              <p><mark>Down-Arrow</mark> Move down a request</p>
-              <p><mark>Enter</mark> Submit a request</p>
-              <p><mark>Escape</mark> Escape a text box</p>
-              <p><mark>Ctrl+N</mark> Create a new client</p>
-              <p><mark>Ctrl+O</mark> Open a file</p>
-              <p><mark>Ctrl+F</mark> Open a folder</p>
-              <p><mark>Ctrl+S</mark> Save current client</p>
-              <p><mark>Ctrl+E</mark> Move up a request</p>
-              <p><mark>Ctrl+Z</mark> Undo action</p>
-              <p><mark>Ctrl+Y</mark> Redo action</p>
+              <div class="alert alert-dark" role="alert">
+                <p><mark>Up-Arrow</mark> Move up a request</p>
+                <p><mark>Down-Arrow</mark> Move down a request</p>
+                <p><mark>Enter</mark> Submit a request</p>
+                <p><mark>Escape</mark> Escape a text box</p>
+                <p><mark>Ctrl+N</mark> Create a new client</p>
+                <p><mark>Ctrl+O</mark> Open a file</p>
+                <p><mark>Ctrl+F</mark> Open a folder</p>
+                <p><mark>Ctrl+S</mark> Save current client</p>
+                <p><mark>Ctrl+E</mark> Move up a request</p>
+                <p><mark>Ctrl+Z</mark> Undo action</p>
+                <p><mark>Ctrl+Y</mark> Redo action</p>
+              </div>
 
 
 
@@ -331,7 +328,7 @@ for future editing as a .discovery file.
                 is used to preview the output of a single discovery response. It shows the objections and response formatted
                 identically to how they will be written in the exported file. The <strong>Preview DOCX</strong> (right) window
                 shows a preview of the full exported DOCX file. This allows you to check the formatting and details of the exported
-                file before actually exporting it. Note that this might not be identical to the final export in microsoft word.
+                file before actually exporting it. <i>Note that this might not be identical to the final export in microsoft word.</i>
               </p>
               <div class="row content-section">
                 <div class="col-md-6">
@@ -345,6 +342,22 @@ for future editing as a .discovery file.
 
               <h4 id="objections">Objections</h4>
               <hr>
+              <p>
+                Objections are listed in the objection panel on the right side of the editor. When left-clicked, that objection
+                will be toggled for the current request (turning green). This objections text will then be added to the requests
+                objection box. When right-clicked, the objection will be selected, allowing you to add list items into the objection
+                if [VAR] is present in the objections text body or additional text body. The final response output for each request
+                will be follow the order <strong>Objections, NotWithtanding Text, Response, Additional Text</strong>. The Notwithstanding 
+                Text is only added if there are objections selected, by default it is:
+              </p>
+              <p><i>"Notwithstanding the foregoing objections and subject thereto, Responding Party responds as follows: "</i></p>
+              <p>But if an objection is selected with the option Alter Notwithstanding Text, then it is:</p>
+              <p><i>"Notwithstanding the foregoing objections and subject thereto, and as Responding Party understands the proper scope and/or meaning of this request, Responding Party responds as follows: "</i></p>
+                
+                The software provides a default set of objections
+                to choose from, however these can all be edited using the <strong>Objection Editor</strong>. The editor allows you to 
+                create new objections, edit them and delete them:
+              </p>
               <img class="img-fluid" src="objections_editor.png">
               <br><br>
               <p>
@@ -372,53 +385,31 @@ for future editing as a .discovery file.
               </p>
               <h4 id="settings">Settings</h4>
               <hr>
+              <p>There is a wide range of settings within the software, most of them are inutitive so they are not
+                explained further in this guide.
+              </p>
               <div class="row content-section">
-                <div class="col-md-6">
+                <div class="col-md-3">
                     <img src="settings_general_example.png" class="img-fluid image-half" alt="Placeholder Image">
                 </div>
-                <div class="col-md-6">
-                    <h4>General</h4>
-                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
-                </div>
+                <div class="col-md-3">
+                  <img src="settings_appearance_example.png" class="img-fluid image-half" alt="Placeholder Image">
               </div>
-              <br>
-              <div class="row content-section">
-                <div class="col-md-6">
-                    <img src="settings_appearance_example.png" class="img-fluid image-half" alt="Placeholder Image">
-                </div>
-                <div class="col-md-6">
-                    <h4>Appearance</h4>
-                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
-                </div>
+              <div class="col-md-3">
+                <img src="settings_spelling_example.png" class="img-fluid image-half" alt="Placeholder Image">
               </div>
-              <br>
-              <div class="row content-section">
-                <div class="col-md-6">
-                    <img src="settings_spelling_example.png" class="img-fluid image-half" alt="Placeholder Image">
-                </div>
-                <div class="col-md-6">
-                    <h4>Spelling and Language</h4>
-                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
-                </div>
-              </div>
-              <br>
-              <div class="row content-section">
-                <div class="col-md-6">
-                    <img src="settings_about_example.png" class="img-fluid image-half" alt="Placeholder Image">
-                </div>
-                <div class="col-md-6">
-                    <h4>About</h4>
-                    <p>This is where your text content goes. You can write as much text as needed, and it will stay aligned to the right of the image.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum, ligula sit amet scelerisque finibus, eros tortor consectetur odio, at gravida velit elit eu justo.</p>
-                </div>
+              <div class="col-md-3">
+                <img src="settings_about_example.png" class="img-fluid image-half" alt="Placeholder Image">
               </div>
             </div>
+            <br>
+            <h4 id="examples">Examples</h4>
+            <hr>
+            <img class="img-fluid" src="user_interface_2.png">
           </div>
         </div>
       </div>
+      
       
 
 
